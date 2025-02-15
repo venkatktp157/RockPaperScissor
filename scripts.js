@@ -7,7 +7,7 @@ function playGame(playerChoice) {
     let computerChoice;
 
     // Adaptive AI: If player loses 3 times in a row, make the game fairer
-    if (lossStreak >= 3) {
+    if (lossStreak >= 5) {
         if (playerChoice === 'rock') computerChoice = 'scissors';
         else if (playerChoice === 'paper') computerChoice = 'rock';
         else if (playerChoice === 'scissors') computerChoice = 'paper';
